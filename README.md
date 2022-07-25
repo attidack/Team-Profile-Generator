@@ -8,7 +8,7 @@
   Keep track of your companies employees with this app.  developed with test driven development using Jest
 
   ## Video Walkthrough
-  none yet
+  https://drive.google.com/file/d/1oknphKP4FFRJ6_BpjocJCMn8ovpwGria/view
 
   ## Screenshot
   ![Screenshot](/assets/imgs/screenshot.png)
