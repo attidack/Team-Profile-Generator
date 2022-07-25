@@ -4,9 +4,8 @@ const generateManager = function (manager) {
       <div class="card h-100 shadow">
           <div class="card-header bg-primary text-white">
               <h3>${manager.name}</h3>
-              <h4><i class="material-icons">content_paste</i> Manager</h4>
+              <h4><i class="bi bi-cup-hot"></i> Manager</h4>
           </div>
-
           <div class="card-body bg-light">
             <div class="border bg-white">
               <p><strong>ID:</strong> ${manager.id}</p>
@@ -30,15 +29,19 @@ const generateEngineer = function (engineer) {
       <div class="card h-100 bg-light shadow">
           <div class="card-header bg-primary text-white">
               <h3>${engineer.name}</h3>
-              <h4><i class="material-icons">laptop_mac</i> Engineer</h4>
+              <h4><i class="bi bi-eyeglasses"></i> Engineer</h4>
           </div>
-
-          <div class="card-body bg-white">
-              <p class="border"><strong>ID:</strong> ${engineer.id}</p>
-              <p class="border"><strong>Email:</strong> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-              <p class="border"><strong>Github:</strong> <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+          <div class="card-body bg-light">
+            <div class="border bg-white">
+              <p><strong>ID:</strong> ${engineer.id}</p>
+            </div>
+            <div class="border bg-white">
+              <p><strong>Email:</strong> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+            </div>
+            <div class="border bg-white">
+              <p><strong>Github:</strong> <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
+            </div>
           </div>
-
       </div>
   </div>
   `
@@ -50,13 +53,18 @@ const generateIntern = function (intern) {
       <div class="card h-100 bg-light shadow">
           <div class="card-header bg-primary text-white">
               <h3>${intern.name}</h3>
-              <h4><i class="material-icons">assignment_ind</i> Intern</h4>
+              <h4><i class="bi bi-mortarboard"></i> Intern</h4>
           </div>
-
-          <div class="card-body bg-white">
-              <p class="border"><strong>ID:</strong> ${intern.id}</p>
-              <p class="border"><strong>Email:</strong><a href="mailto:${intern.email}">${intern.email}</a></p>
-              <p class="border"><strong>School:</strong> ${intern.school}</p>
+          <div class="card-body bg-light">
+            <div class="border bg-white">
+              <p><strong>ID:</strong> ${intern.id}</p>
+            </div>
+            <div class="border bg-white">
+              <p><strong>Email:</strong><a href="mailto:${intern.email}">${intern.email}</a></p>
+            </div>
+            <div class="border bg-white">
+              <p><strong>School:</strong> ${intern.school}</p>
+            </div>
           </div>
   </div>
 </div>
@@ -108,12 +116,11 @@ return`
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-      <div class="container flex-row align-center py-3">
-        <h1 class="bg-danger mb-5 w-100 text-center text-white">My Team</h1>
+      <div class="align-center pb-5">
+        <h1 class="bg-danger p-5 w-100 text-center text-white">My Team</h1>
       </div>
       
     </header>
